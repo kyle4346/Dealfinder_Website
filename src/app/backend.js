@@ -133,7 +133,7 @@ app.get("/", (req, res) => {
 // });
 
 //link for posting all items scraped from amazon website
-app.get("/post", (req,res) => {
+app.post("/post", (req,res) => {
   async function postAll() {
     const postResults = await collection.insertMany(items);
     res.send(postResults);
