@@ -97,6 +97,7 @@ async function main() {
     //=======================================================
   }
   //testing purpose to show that all 60 items in webpage was parsed
+  console.log(items);
   console.log(items.length);
 
   await browser.close();
